@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\EnemyCreate.cs" />
+    <Compile Include="Assets\Scripts\Spider.cs" />
     <Compile Include="Assets\Scripts\SpiderMove.cs" />
     <None Include="Assets\Spiders\animations list.txt" />
     <Reference Include="UnityEngine">

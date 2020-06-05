@@ -5,9 +5,9 @@ using UnityEngine;
 public class EnemyCreate : MonoBehaviour
 {
     [SerializeField] private Transform _spawn;
-    [SerializeField] private GameObject _enemy;
+    [SerializeField] private Spider _template;
 
-    [HideInInspector] private Transform[] _spawnPoints;
+    private Transform[] _spawnPoints;
 
     private void Start()
     {
@@ -26,7 +26,7 @@ public class EnemyCreate : MonoBehaviour
         
         for (uint i = 0; i < uint.MaxValue; i++)
         {            
-            GameObject enemy = Instantiate(_enemy, _spawnPoints[Random.Range(0, _spawn.childCount - 1)]);
+            var enemy = Instantiate(_template, _spawnPoints[Random.Range(0, _spawn.childCount - 1)]);
 
             yield return waitSecods;            
         }
