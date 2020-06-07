@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyCreate : MonoBehaviour
+public class Spawn : MonoBehaviour
 {
     [SerializeField] private Transform _spawn;
     [SerializeField] private Spider _template;
@@ -31,8 +31,4 @@ public class EnemyCreate : MonoBehaviour
             yield return waitSecods;            
         }
     }
-
-
-
-
 }
